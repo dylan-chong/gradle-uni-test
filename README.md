@@ -1,0 +1,35 @@
+# Gradle Uni Test
+
+Try running `./gradlew` in this repo on a ECS computer, you will get:
+
+    Downloading https://services.gradle.org/distributions/gradle-3.1-all.zip
+
+    Exception in thread "main" java.net.NoRouteToHostException: No route to host (Host unreachable)
+            at java.net.PlainSocketImpl.socketConnect(Native Method)
+            at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+            at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+            at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+            at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+            at java.net.Socket.connect(Socket.java:589)
+            at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:673)
+            at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+            at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+            at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+            at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+            at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+            at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+            at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+            at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+            at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1032)
+            at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+            at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1546)
+            at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+            at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+            at org.gradle.wrapper.Download.downloadInternal(Download.java:58)
+            at org.gradle.wrapper.Download.download(Download.java:44)
+            at org.gradle.wrapper.Install$1.call(Install.java:61)
+            at org.gradle.wrapper.Install$1.call(Install.java:48)
+            at org.gradle.wrapper.ExclusiveFileAccessManager.access(ExclusiveFileAccessManager.java:69)
+            at org.gradle.wrapper.Install.createDist(Install.java:48)
+            at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:107)
+            at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
